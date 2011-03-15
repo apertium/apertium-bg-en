@@ -1,12 +1,8 @@
 * text=auto !eol
-.deps/en.dix -text
-.deps/en.metadix -text
 /AUTHORS -text
 /COPYING -text
 /ChangeLog -text
-/INSTALL -text
 /Makefile.am -text
-/Makefile.in -text
 /NEWS -text
 /README -text
 /aclocal.m4 -text
@@ -27,15 +23,10 @@
 /apertium-bg-en.post-bg.dix -text
 /apertium-bg-en.post-en.dix -text
 /autogen.sh -text
-/bg-en.mode -text
 /bg-en.prob -text
 /buscaPar.xsl -text
 /config.in -text
-/configure -text
 /configure.ac -text
-/en-bg.mode -text
 /en-bg.prob -text svneol=unset#unset
-/install-sh -text
-/missing -text
 /modes.xml -text
 /principal.xsl -text
