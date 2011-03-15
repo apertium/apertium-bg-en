@@ -28,5 +28,6 @@
 /config.in -text
 /configure.ac -text
 /en-bg.prob -text svneol=unset#unset
+/lexchoicebil.xsl -text
 /modes.xml -text
 /principal.xsl -text

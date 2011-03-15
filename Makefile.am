@@ -67,13 +67,21 @@ $(PREFIX2).t3x.bin: $(BASENAME).$(PREFIX2).t3x
 	apertium-validate-postchunk $(BASENAME).$(PREFIX2).t3x
 	apertium-preprocess-transfer $(BASENAME).$(PREFIX2).t3x $@
 
-$(PREFIX1).autobil.bin: $(BASENAME).$(PREFIX1).dix
-	apertium-validate-dictionary $(BASENAME).$(PREFIX1).dix
-	lt-comp lr $(BASENAME).$(PREFIX1).dix $@
+.deps/$(BASENAME).$(PREFIX1).dix: $(BASENAME).$(PREFIX1).dix lexchoicebil.xsl
+	if [ ! -d .deps ]; then mkdir .deps; fi
+	xsltproc lexchoicebil.xsl $(BASENAME).$(PREFIX1).dix > $@
 
-$(PREFIX2).autobil.bin: $(BASENAME).$(PREFIX1).dix
-	apertium-validate-dictionary $(BASENAME).$(PREFIX1).dix
-	lt-comp lr $(BASENAME).$(PREFIX1).dix $@
+$(PREFIX1).autobil.bin: .deps/$(BASENAME).$(PREFIX1).dix
+	apertium-validate-dictionary .deps/$(BASENAME).$(PREFIX1).dix
+	lt-comp lr .deps/$(BASENAME).$(PREFIX1).dix $@
+
+.deps/$(BASENAME).$(PREFIX2).dix: $(BASENAME).$(PREFIX1).dix lexchoicebil.xsl
+	if [ ! -d .deps ]; then mkdir .deps; fi
+	xsltproc lexchoicebil.xsl $(BASENAME).$(PREFIX1).dix > $@
+
+$(PREFIX2).autobil.bin: .deps/$(BASENAME).$(PREFIX2).dix
+	apertium-validate-dictionary .deps/$(BASENAME).$(PREFIX2).dix
+	lt-comp rl .deps/$(BASENAME).$(PREFIX2).dix $@
 
 $(PREFIX1).autopgen.bin: $(BASENAME).post-$(LANG1).dix
 	apertium-validate-dictionary $(BASENAME).post-$(LANG1).dix

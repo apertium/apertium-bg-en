@@ -6470,9 +6470,9 @@
     <e slr="1"><p><l>мал<s n="adj"/></l><r>short<s n="adj"/><s n="sint"/></r></p></e>
     <e slr="2"><p><l>мал<s n="adj"/></l><r>petty<s n="adj"/><s n="sint"/></r></p></e>
 
-    <e c="  0"><p><l>голем<s n="adj"/></l><r>big<s n="adj"/><s n="sint"/></r></p></e>
-    <e slr="1"><p><l>голем<s n="adj"/></l><r>large<s n="adj"/><s n="sint"/></r></p></e>
-    <e slr="2"><p><l>голем<s n="adj"/></l><r>great<s n="adj"/><s n="sint"/></r></p></e>
+    <e c="  0"><p><l>голям<s n="adj"/></l><r>big<s n="adj"/><s n="sint"/></r></p></e>
+    <e slr="1"><p><l>голям<s n="adj"/></l><r>large<s n="adj"/><s n="sint"/></r></p></e>
+    <e slr="2"><p><l>голям<s n="adj"/></l><r>great<s n="adj"/><s n="sint"/></r></p></e>
 
     <e c="  0"><p><l>мрачен<s n="adj"/></l><r>dark<s n="adj"/><s n="sint"/></r></p></e>
     <e slr="1"><p><l>мрачен<s n="adj"/></l><r>surly<s n="adj"/><s n="sint"/></r></p></e>
