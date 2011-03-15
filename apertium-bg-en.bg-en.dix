@@ -188,12 +188,12 @@
     <e slr="2"><p><l>кај<s n="pr"/></l><r>about<s n="pr"/></r></p></e>
     <e slr="3"><p><l>кај<s n="pr"/></l><r>around<s n="pr"/></r></p></e>
 
-    <e c="  0"><p><l>од<s n="pr"/></l><r>from<s n="pr"/></r></p></e>
-    <e slr="1"><p><l>од<s n="pr"/></l><r>out<b/>of<s n="pr"/></r></p></e>
-    <e slr="2"><p><l>од<s n="pr"/></l><r>off<s n="pr"/></r></p></e>
-    <e slr="3"><p><l>од<s n="pr"/></l><r>of<s n="pr"/></r></p></e>
-    <e slr="4"><p><l>од<s n="pr"/></l><r>by<s n="pr"/></r></p></e>
-    <e slr="5"><p><l>од<s n="pr"/></l><r>than<s n="pr"/></r></p></e>
+    <e c="  0"><p><l>от<s n="pr"/></l><r>from<s n="pr"/></r></p></e>
+    <e slr="1"><p><l>от<s n="pr"/></l><r>out<b/>of<s n="pr"/></r></p></e>
+    <e slr="2"><p><l>от<s n="pr"/></l><r>off<s n="pr"/></r></p></e>
+    <e slr="3"><p><l>от<s n="pr"/></l><r>of<s n="pr"/></r></p></e>
+    <e slr="4"><p><l>от<s n="pr"/></l><r>by<s n="pr"/></r></p></e>
+    <e slr="5"><p><l>от<s n="pr"/></l><r>than<s n="pr"/></r></p></e>
 
     <e c="  0"><p><l>со<s n="pr"/></l><r>with<s n="pr"/></r></p></e>
     <e slr="1"><p><l>со<s n="pr"/></l><r>by<b/>means<b/>of<s n="pr"/></r></p></e>
@@ -6817,7 +6817,7 @@
     <e c="  0"><p><l>експертски<s n="adj"/></l><r>expert<s n="adj"/></r></p></e>
     <e c="  0"><p><l>екстрадиран<s n="adj"/></l><r>extradited<s n="adj"/></r></p></e>
     <e c="  0"><p><l>елегантен<s n="adj"/></l><r>elegant<s n="adj"/></r></p></e>
-    <e c="  0"><p><l>електричен<s n="adj"/></l><r>electrical<s n="adj"/></r></p></e>
+    <e c="  0"><p><l>електрически<s n="adj"/></l><r>electrical<s n="adj"/></r></p></e>
     <e c="  0"><p><l>електронски<s n="adj"/></l><r>electronic<s n="adj"/></r></p></e>
     <e c="  0"><p><l>елитен<s n="adj"/></l><r>elite<s n="adj"/></r></p></e>
     <e c="  0"><p><l>емоционален<s n="adj"/></l><r>emotional<s n="adj"/></r></p></e>
