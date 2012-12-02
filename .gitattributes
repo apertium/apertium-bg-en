@@ -32,7 +32,6 @@ cgi-tasks/xad -text
 cgi-tasks/xae -text
 cgi-tasks/xaf -text
 cgi-tasks/xag -text
-cgi-tasks/xah -text
 /config.in -text
 /configure.ac -text
 /en-bg.prob -text svneol=unset#unset
