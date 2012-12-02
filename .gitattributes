@@ -25,7 +25,6 @@
 /autogen.sh -text
 /bg-en.prob -text
 /buscaPar.xsl -text
-cgi-tasks/apertium-bg-en.bg-en.dix -text
 cgi-tasks/xaa -text
 cgi-tasks/xab -text
 cgi-tasks/xac -text
