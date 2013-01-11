@@ -25,6 +25,9 @@
 /autogen.sh -text
 /bg-en.prob -text
 /buscaPar.xsl -text
+cgi-tasks/adjectives/all -text
+cgi-tasks/adjectives/xaa -text
+cgi-tasks/adjectives/xab -text
 cgi-tasks/nouns/xaa -text
 cgi-tasks/nouns/xab -text
 cgi-tasks/nouns/xac -text
