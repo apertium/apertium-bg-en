@@ -140,12 +140,12 @@
     <!-- Particles -->
 
     <e><p><l>да<s n="part"/></l><r>to<s n="pr"/></r></p></e>
-    <e><p><l>ли<s n="part"/></l><r></r></p></e> <!-- Question particle -->
-    <e><p><l>дали<s n="part"/></l><r></r></p></e> <!-- 'Request for information' -->
-    <e><p><l>нели<s n="part"/></l><r></r></p></e> <!-- 'Negative interrogative' -->
-    <e><p><l>зар<s n="part"/></l><r></r></p></e> <!-- 'Surprise' -->
-    <e><p><l>да<b/>не<s n="part"/></l><r></r></p></e> <!-- 'Tag question' -->
-    <e><p><l>а<s n="part"/></l><r></r></p></e> <!-- 'Request for affirmation' -->
+    <e r="LR"><p><l>ли<s n="part"/></l><r></r></p></e> <!-- Question particle -->
+    <e r="LR"><p><l>дали<s n="part"/></l><r></r></p></e> <!-- 'Request for information' -->
+    <e r="LR"><p><l>нели<s n="part"/></l><r></r></p></e> <!-- 'Negative interrogative' -->
+    <e r="LR"><p><l>зар<s n="part"/></l><r></r></p></e> <!-- 'Surprise' -->
+    <e r="LR"><p><l>да<b/>не<s n="part"/></l><r></r></p></e> <!-- 'Tag question' -->
+    <e r="LR"><p><l>а<s n="part"/></l><r></r></p></e> <!-- 'Request for affirmation' -->
 
     <!-- Prepositions -->
  
@@ -10953,12 +10953,12 @@
     <e><p><l>ТРТ<s n="abbr"/></l><r>TRT<s n="abbr"/></r></p></e>
     <e><p><l>ФЕНА<s n="abbr"/></l><r>FENA<s n="abbr"/></r></p></e>
     <e><p><l>ХЛЦ<s n="abbr"/></l><r>HLC<s n="abbr"/></r></p></e>
-    <e><p><l>зам<s n="abbr"/></l><r></r></p></e>
-    <e><p><l>ул<s n="abbr"/></l><r></r></p></e>
-    <e><p><l>год<s n="abbr"/></l><r></r></p></e>
+    <e r="LR"><p><l>зам<s n="abbr"/></l><r></r></p></e>
+    <e r="LR"><p><l>ул<s n="abbr"/></l><r></r></p></e>
+    <e r="LR"><p><l>год<s n="abbr"/></l><r></r></p></e>
     <e><p><l>св<s n="abbr"/></l><r>St<s n="abbr"/></r></p></e>
     <e><p><l>др<s n="abbr"/></l><r>Dr<s n="abbr"/></r></p></e>
-    <e><p><l>сем<s n="abbr"/></l><r></r></p></e>
+    <e r="LR"><p><l>сем<s n="abbr"/></l><r></r></p></e>
 
 
     <!-- Interjections -->

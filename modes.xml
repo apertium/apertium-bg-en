@@ -162,10 +162,12 @@
         <file name="en-bg.prob"/>
       </program>
       <program name="apertium-pretransfer"/>
-      <program name="apertium-transfer">
+      <program name="lt-proc -b">
+        <file name="en-bg.autobil.bin"/>
+      </program>
+      <program name="apertium-transfer -b">
         <file name="apertium-bg-en.en-bg.t1x"/>
         <file name="en-bg.t1x.bin"/>
-        <file name="en-bg.autobil.bin"/>
       </program>
       <program name="apertium-interchunk">
         <file name="apertium-bg-en.en-bg.t2x"/>
@@ -224,10 +226,12 @@
         <file name="en-bg.prob"/>
       </program>
       <program name="apertium-pretransfer"/>
-      <program name="apertium-transfer">
+      <program name="lt-proc -b">
+        <file name="en-bg.autobil.bin"/>
+      </program>
+      <program name="apertium-transfer -b">
         <file name="apertium-bg-en.en-bg.t1x"/>
         <file name="en-bg.t1x.bin"/>
-        <file name="en-bg.autobil.bin"/>
       </program>
     </pipeline>
   </mode>
@@ -241,10 +245,12 @@
         <file name="en-bg.prob"/>
       </program>
       <program name="apertium-pretransfer"/>
-      <program name="apertium-transfer">
+      <program name="lt-proc -b">
+        <file name="en-bg.autobil.bin"/>
+      </program>
+      <program name="apertium-transfer -b">
         <file name="apertium-bg-en.en-bg.t1x"/>
         <file name="en-bg.t1x.bin"/>
-        <file name="en-bg.autobil.bin"/>
       </program>
       <program name="apertium-interchunk">
         <file name="apertium-bg-en.en-bg.t2x"/>
@@ -262,10 +268,12 @@
         <file name="en-bg.prob"/>
       </program>
       <program name="apertium-pretransfer"/>
-      <program name="apertium-transfer">
+      <program name="lt-proc -b">
+        <file name="en-bg.autobil.bin"/>
+      </program>
+      <program name="apertium-transfer -b">
         <file name="apertium-bg-en.en-bg.t1x"/>
         <file name="en-bg.t1x.bin"/>
-        <file name="en-bg.autobil.bin"/>
       </program>
       <program name="apertium-interchunk">
         <file name="apertium-bg-en.en-bg.t2x"/>
@@ -287,10 +295,12 @@
         <file name="en-bg.prob"/>
       </program>
       <program name="apertium-pretransfer"/>
-      <program name="apertium-transfer">
+      <program name="lt-proc -b">
+        <file name="en-bg.autobil.bin"/>
+      </program>
+      <program name="apertium-transfer -b">
         <file name="apertium-bg-en.en-bg.t1x"/>
         <file name="en-bg.t1x.bin"/>
-        <file name="en-bg.autobil.bin"/>
       </program>
       <program name="apertium-interchunk">
         <file name="apertium-bg-en.en-bg.t2x"/>
