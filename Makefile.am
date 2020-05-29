@@ -1,4 +1,3 @@
-VERSION=0.0.1
 LANG1=bg
 LANG2=en
 PREFIX1=$(LANG1)-$(LANG2)
@@ -12,8 +11,9 @@ TARGETS_COMMON = $(PREFIX1).automorf.bin $(PREFIX2).automorf.bin \
 	$(PREFIX1).autogen.bin $(PREFIX2).autogen.bin \
 	$(PREFIX1).t1x.bin $(PREFIX2).t1x.bin \
 	$(PREFIX1).t2x.bin $(PREFIX2).t2x.bin \
-	$(PREFIX1).t3x.bin $(PREFIX2).t3x.bin \
-	modes
+	$(PREFIX1).t3x.bin $(PREFIX2).t3x.bin
+
+@ap_include@
 
 TARGETS = $(TARGETS_COMMON)
 
@@ -27,7 +27,7 @@ $(PREFIX2).autogen.bin: $(BASENAME).$(LANG1).dix
 	lt-comp rl $(BASENAME).$(LANG1).dix $@
 
 .deps/$(LANG2).metadix: $(BASENAME).$(LANG2).metadix
-	if [ ! -d .deps ]; then mkdir .deps; fi
+	if [ ! -d .deps ]; then $(MKDIR_P) .deps; fi
 	xsltproc --stringparam alt en_GB alt.xsl $(BASENAME).$(LANG2).metadix >$@
 
 .deps/$(LANG2).dix: .deps/$(LANG2).metadix
@@ -68,7 +68,7 @@ $(PREFIX2).t3x.bin: $(BASENAME).$(PREFIX2).t3x
 	apertium-preprocess-transfer $(BASENAME).$(PREFIX2).t3x $@
 
 .deps/$(BASENAME).$(PREFIX1).dix: $(BASENAME).$(PREFIX1).dix lexchoicebil.xsl
-	if [ ! -d .deps ]; then mkdir .deps; fi
+	if [ ! -d .deps ]; then $(MKDIR_P) .deps; fi
 	xsltproc lexchoicebil.xsl $(BASENAME).$(PREFIX1).dix > $@
 
 $(PREFIX1).autobil.bin: .deps/$(BASENAME).$(PREFIX1).dix
@@ -76,7 +76,7 @@ $(PREFIX1).autobil.bin: .deps/$(BASENAME).$(PREFIX1).dix
 	lt-comp lr .deps/$(BASENAME).$(PREFIX1).dix $@
 
 .deps/$(BASENAME).$(PREFIX2).dix: $(BASENAME).$(PREFIX1).dix lexchoicebil.xsl
-	if [ ! -d .deps ]; then mkdir .deps; fi
+	if [ ! -d .deps ]; then $(MKDIR_P) .deps; fi
 	xsltproc lexchoicebil.xsl $(BASENAME).$(PREFIX1).dix > $@
 
 $(PREFIX2).autobil.bin: .deps/$(BASENAME).$(PREFIX2).dix
@@ -114,30 +114,13 @@ apertium_bg_en_DATA=$(PREFIX1).automorf.bin $(PREFIX2).automorf.bin \
 		$(PREFIX1).prob $(PREFIX2).prob \
 		$(PREFIX1).t1x.bin $(PREFIX2).t1x.bin \
 		$(PREFIX1).t2x.bin $(PREFIX2).t2x.bin \
-		$(PREFIX1).t3x.bin $(PREFIX2).t3x.bin \
-		$(PREFIX1).mode $(PREFIX2).mode 
+		$(PREFIX1).t3x.bin $(PREFIX2).t3x.bin
 
 apertium_bg_endir=$(prefix)/share/apertium/apertium-$(PREFIX1)/
-apertium_bg_en_modesdir=$(prefix)/share/apertium/modes/
 
-$(PREFIX1).mode: modes.xml
-	apertium-gen-modes modes.xml
-
-$(PREFIX2).mode: modes.xml
-	apertium-gen-modes modes.xml
-
-modes: modes.xml
-	apertium-gen-modes modes.xml
-	cp *.mode modes/
-
-install-data-local:
-	apertium-gen-modes modes.xml apertium-$(PREFIX1)
-	test -d $(DESTDIR)$(apertium_bg_en_modesdir) || mkdir $(DESTDIR)$(apertium_bg_en_modesdir)
-	$(INSTALL_DATA) $(PREFIX1).mode $(DESTDIR)$(apertium_bg_en_modesdir)
-	$(INSTALL_DATA) $(PREFIX2).mode $(DESTDIR)$(apertium_bg_en_modesdir)
+install-data-local: install-modes
 	$(INSTALL_DATA) $(BASENAME).$(PREFIX1).t1x $(BASENAME).$(PREFIX1).t2x $(DESTDIR)$(apertium_bg_endir)
 	$(INSTALL_DATA) $(BASENAME).$(PREFIX1).t3x $(BASENAME).$(PREFIX2).t1x $(DESTDIR)$(apertium_bg_endir)
 	$(INSTALL_DATA) $(BASENAME).$(PREFIX2).t2x $(BASENAME).$(PREFIX2).t3x $(DESTDIR)$(apertium_bg_endir)
 
 CLEANFILES = -rf $(TARGETS) modes
-
